@@ -277,7 +277,7 @@ $$
 
 Warum arbeitet man mit "odds" und "logits"? Wenn man nur p modellieren würde, wären die möglichen Werte auf 0 ... 1 begrenzt. "Odds" dagegen können Werte zwischen 0 und ∞ annehmen. Der Logarithmus schliesslich sorgt für eine symmetrische Verteilung der originalen Wahrscheinlichkeiten unter 50 % (jetzt zwischen --∞ und 0) und der originalen Wahrscheinlichkeiten über 50 % (jetzt zwischen 0 und +∞).
 
-Bei GLMs wir ja immer die abhängige Variable mit der Link-Funktion transformiert. Damit modelliert eine logistische Regression das folgende Modell (in einer multiplen logistischen Regression ggf. auch mit *x*~1~, *x*~2~ usw.):
+Bei GLMs wird ja immer die abhängige Variable mit der Link-Funktion transformiert. Damit modelliert eine logistische Regression das folgende Modell (in einer multiplen logistischen Regression ggf. auch mit *x*~1~, *x*~2~ usw.):
 
 $$
 \ln\left( \frac{\pi(y)}{1 - \pi(y)} \right) = \ \beta_{0} + \beta_{1}x
